@@ -17,6 +17,6 @@ jobs:
       - name: checking version
         run: aws --version
       - name: zipping pythn file
-        run: zip -r python.zip python.py
+        run: zip -r python.zip *.py
         
       
