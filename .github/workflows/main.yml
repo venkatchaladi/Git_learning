@@ -1,0 +1,14 @@
+name: this is new workflow demo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lambdadeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: check the files
+        run: ls -ls
