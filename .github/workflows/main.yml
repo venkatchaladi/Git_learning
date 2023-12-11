@@ -12,3 +12,5 @@ jobs:
       - uses: actions/checkout@main
       - name: check the files
         run: ls -ls
+      - name: checking version
+        run: aws --version
